@@ -20,6 +20,8 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+
+    <script src="js/main.js"></script>
   </head>
   <body ng-app="starter">
 
@@ -35,9 +37,15 @@
         <input type="url" placeholder="Enter URL of article">
       </label>
 
-      <button class="button button-positive">
+      <button ng-click="click" class="button button-positive">
         Summarize!
       </button>
+
+      <div>
+        <ul>
+            <li ng-repeat="item in items">{{ item }}</li>
+        </ul>
+      </div>
 
       </ion-content>
 
